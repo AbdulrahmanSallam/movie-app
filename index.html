@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Here you found all movies you want">
+    <meta name="keywords" content="movie film">
+    <title>Movies</title>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="loadingScreen" class="d-none">
+        <span class="loader"></span>
+    </div>
+
+    <aside id="aside" class="overflow-hidden">
+        <div class="asideContent d-flex h-100">
+            <div id="left_content">
+                <div id="left" class="d-flex h-100 p-4 ps-3 pe-2 flex-column justify-content-between">
+                    <div class="links">
+                        <ul class=" d-flex p-0  flex-column justify-content-center">
+                            <li><a href="#" category="now_playing">Now playing</a></li>
+                            <li><a href="#" category="popular">Popular</a></li>
+                            <li><a href="#" category="top_rated">Top Rated</a></li>
+                            <li><a href="#" category="trending">Trending</a></li>
+                            <li><a href="#" category="upcoming">Up Coming</a></li>
+                            <li><a id="contactBtn" href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="bottom">
+                        <div class="icons  mb-3">
+                            <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f "
+                                    role="button"></i></a>
+                            <a target="_blank" href="https://www.twitter.com/"><i class="fa-brands fa-twitter "
+                                    role="button"></i></a>
+                            <a target="_blank" href="https://www.google.com/"><i class="fas fa-globe "
+                                    role="button"></i></a>
+                        </div>
+                        <div class="text-white-50">
+                            <p>Copyright © 2024 All Rights <br> Reserved</p>
+                            <p>Created by <a class="btn p-0 name"
+                                    href="https://www.linkedin.com/in/abdulrahman-sallam-b74a3b290">Abdulrahman
+                                    Sallam</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="right" num="0" class="text-center d-flex p-3 h-100  flex-column justify-content-between">
+                <div>
+                    <div num="1" id="rightTop">
+                        <img src="images/logo.png" class="img-fluid" alt="shape">
+                    </div>
+                </div>
+                <div id="rightCenter" num="2">
+                    <i id="closeIcon" class="fas fa-xmark d-none fs-3 " role="button"></i>
+                    <i id="openIcon" class="fas fa-align-justify fs-3" role="button"></i>
+                </div>
+                <div>
+                    <div id="rightBottom" num="3">
+                        <div class="d-flex flex-column">
+                            <i class="fas fa-globe pb-2 fs-5" role="button"></i>
+                            <i class="fas fa-share-nodes fs-5" role="button"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </aside>
+    <main id="main">
+        <div class="container">
+            <section id="home" class="overflow-hidden">
+                <div class="top my-4 p-1">
+                    <input id="searchInput" type="search" class=" form-control rounded-pill" placeholder="Search">
+                </div>
+                <div id="container" class="row gx-5 gy-4 p-4  overflow-hidden ">
+
+                </div>
+            </section>
+
+            <section id="contact" class="text-white">
+                <h2 class=" fw-normal">Contact Us</h2>
+                <div class="inputs row g-4">
+                    <div class="col-md-6"><input class="w-100 rounded-0" type="text" placeholder="Enter your name ">
+                    </div>
+                    <div class="col-md-6"><input class=" w-100 rounded-0" type="email" placeholder="Enter your email">
+                    </div>
+                    <div class="col-md-6"><input class="w-100 rounded-0" type="tel" placeholder="Enter your phone">
+                    </div>
+                    <div class="col-md-6"><input class=" w-100 rounded-0" type="number" max="200" min="0"
+                            placeholder="Enter your age ">
+                    </div>
+                    <div class="col-md-6"><input class="w-100 rounded-0" type="password"
+                            placeholder="Enter your password ">
+                    </div>
+                    <div class="col-md-6"><input class=" w-100 rounded-0" type="password"
+                            placeholder="Renter your password ">
+                    </div>
+                </div>
+                <p id="error" class=" text-danger d-none text-center fs-5">Validation error</p>
+                <button id="submitBtn" class="btn bg-body">Submit</button>
+            </section>
+        </div>
+
+    </main>
+
+
+    <!-- main jquery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- main js  -->
+    <script src="js/index.js" type="module"></script>
+</body>
+
+</html>
