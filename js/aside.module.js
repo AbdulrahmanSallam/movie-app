@@ -1,5 +1,3 @@
-/// <reference types="../@types/jquery" />
-
 export class Aside {
   constructor() {
     this.leftContent = $("#left_content");
@@ -34,10 +32,10 @@ export class Aside {
   changeAside() {
     const wWidth = window.innerWidth;
     if (wWidth < 992) {
-       $("#right").css("backgroundColor", "transparent");
-       $("#rightTop").css("display", "none");
-       $("#rightBottom").css("display", "none");
-       $("#rightCenter").css("color", "white");
+      $("#right").css("backgroundColor", "transparent");
+      $("#rightTop").css("display", "none");
+      $("#rightBottom").css("display", "none");
+      $("#rightCenter").css("color", "white");
     } else {
       $("#right").removeAttr("style");
       $("#rightTop").removeAttr("style");
