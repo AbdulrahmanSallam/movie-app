@@ -77,10 +77,11 @@ html,
     }
 
 }
+
 @media (max-width:900px) {
     html {
-        
-font-size: .9rem;
+
+        font-size: .9rem;
     }
 
 }
@@ -221,5 +222,27 @@ font-size: .9rem;
 #submitBtn:hover {
     color: black;
     background-color: white !important;
+
+}
+
+@media screen and (max-width:992px) {
+
+    #right {
+        background-color: transparent;
+    }
+
+    #rightTop,
+    #rightBottom {
+        display: none;
+    }
+
+    #rightCenter {
+        color: white;
+    }
+
+
+    #left .links ul li {
+        margin-block: 2rem;
+    }
 
 }

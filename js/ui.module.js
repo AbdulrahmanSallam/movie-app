@@ -1,3 +1,4 @@
+"use strict";
 export class Ui {
   constructor() {
     this.containerPlace = document.getElementById("container");
@@ -18,7 +19,6 @@ export class Ui {
             <div id="cardDesccription">
                 <h3 id="c-title" class="w-100">${data[i].original_title}</h3>
                 <p id="f-content">${data[i].overview}</p>
-
                 <span id="date">Relase Date : ${data[i].release_date}</span>
                 <div id="stars" class="d-flex">
                     <span> <i class="fa-solid text-warning fa-star"></i></span>
