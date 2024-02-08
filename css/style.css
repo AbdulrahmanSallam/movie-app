@@ -3,6 +3,10 @@
     font-size: 1.3rem;
 }
 
+img {
+    display: block;
+}
+
 :root {
     scroll-behavior: auto;
 }
