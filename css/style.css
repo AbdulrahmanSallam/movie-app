@@ -3,6 +3,10 @@
     font-size: 1.3rem;
 }
 
+input:focus {
+    box-shadow: none !important;
+}
+
 img {
     display: block;
 }
@@ -23,7 +27,6 @@ input {
 ul {
     list-style: none;
 }
-
 
 /* loading screen */
 .loader {
@@ -63,7 +66,6 @@ ul {
 html,
 #main {
     background-color: #0D0D0D;
-
 }
 
 #searchInput {
@@ -77,24 +79,19 @@ html,
 @media (max-width:992px) {
     #searchInput {
         width: 90%;
-
     }
-
 }
 
 @media (max-width:900px) {
     html {
-
         font-size: .9rem;
     }
-
 }
 
 #card {
     position: relative;
     overflow: hidden;
     border-radius: 14px;
-
 }
 
 #card .image img {
@@ -126,7 +123,6 @@ html,
     margin-bottom: 2rem;
 }
 
-
 #stars {
     margin-top: 1.8rem;
     margin-bottom: 1rem;
@@ -141,7 +137,6 @@ html,
 }
 
 /* aside */
-
 #aside {
     position: fixed;
     top: 0;
@@ -162,7 +157,6 @@ html,
     display: none;
 }
 
-
 #left .links ul li {
     width: 150px;
     margin-bottom: 20px;
@@ -178,7 +172,6 @@ html,
 
 #left .links a:hover {
     color: #f20909;
-
 }
 
 #left .bottom .name {
@@ -189,15 +182,12 @@ html,
     color: #800000;
 }
 
-
 #left .bottom .icons i {
     color: white;
     margin-inline: 10px;
 }
 
-
 /* contact */
-
 #contact {
     padding-block: 4rem;
 }
@@ -226,11 +216,9 @@ html,
 #submitBtn:hover {
     color: black;
     background-color: white !important;
-
 }
 
 @media screen and (max-width:992px) {
-
     #right {
         background-color: transparent;
     }
@@ -244,9 +232,7 @@ html,
         color: white;
     }
 
-
     #left .links ul li {
         margin-block: 2rem;
     }
-
 }

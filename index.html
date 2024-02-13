@@ -7,7 +7,6 @@
     <meta name="description" content="Here you found all movies you want">
     <meta name="keywords" content="movie film">
     <title>Movies</title>
-
     <!-- fontawesome -->
     <link rel="stylesheet" href="css/all.min.css">
     <!-- bootstrap -->
@@ -20,18 +19,17 @@
     <div id="loadingScreen" class="d-none">
         <span class="loader"></span>
     </div>
-
     <aside id="aside" class="overflow-hidden">
         <div class="asideContent d-flex h-100">
             <div id="left_content">
                 <div id="left" class="d-flex h-100 p-4 ps-3 pe-2 flex-column justify-content-between">
                     <div class="links">
                         <ul class=" d-flex p-0  flex-column justify-content-center">
-                            <li><a  role="button" category="now_playing">Now playing</a></li>
-                            <li><a  role="button" category="popular">Popular</a></li>
-                            <li><a  role="button" category="top_rated">Top Rated</a></li>
-                            <li><a  role="button" category="trending">Trending</a></li>
-                            <li><a  role="button" category="upcoming">Up Coming</a></li>
+                            <li><a role="button" category="now_playing">Now playing</a></li>
+                            <li><a role="button" category="popular">Popular</a></li>
+                            <li><a role="button" category="top_rated">Top Rated</a></li>
+                            <li><a role="button" category="trending">Trending</a></li>
+                            <li><a role="button" category="upcoming">Up Coming</a></li>
                             <li><a id="contactBtn" href="#contact">Contact Us</a></li>
                         </ul>
                     </div>
@@ -83,40 +81,40 @@
         <div class="container">
             <section id="home" class="overflow-hidden">
                 <div class="top my-4 p-1">
-                    <input id="searchInput" type="search" class=" form-control rounded-pill" placeholder="Search">
+                    <input id="searchInput" type="search" autofocus class=" form-control rounded-pill"
+                        placeholder="Search">
                 </div>
                 <div id="container" class="row gx-5 gy-4 p-4  overflow-hidden ">
-
                 </div>
             </section>
-
             <section id="contact" class="text-white">
                 <h2 class=" fw-normal">Contact Us</h2>
-                <div class="inputs row g-4">
-                    <div class="col-md-6"><input class="w-100 rounded-0" type="text" placeholder="Enter your name ">
+                <form method="post">
+                    <div class="inputs row g-4">
+                        <div class="col-md-6"><input class="w-100 rounded-0" type="text" placeholder="Enter your name ">
+                        </div>
+                        <div class="col-md-6"><input class=" w-100 rounded-0" type="email"
+                                placeholder="Enter your email">
+                        </div>
+                        <div class="col-md-6"><input class="w-100 rounded-0" type="tel" autocomplete="cc-number"
+                                placeholder="Enter your phone">
+                        </div>
+                        <div class="col-md-6"><input class=" w-100 rounded-0" type="number" max="200" min="0"
+                                placeholder="Enter your age ">
+                        </div>
+                        <div class="col-md-6"><input class="w-100 rounded-0" type="password" autocomplete="new-password"
+                                placeholder="Enter your password ">
+                        </div>
+                        <div class="col-md-6"><input class=" w-100 rounded-0" type="password"
+                                autocomplete="new-password" placeholder="Renter your password ">
+                        </div>
                     </div>
-                    <div class="col-md-6"><input class=" w-100 rounded-0" type="email" placeholder="Enter your email">
-                    </div>
-                    <div class="col-md-6"><input class="w-100 rounded-0" type="tel" placeholder="Enter your phone">
-                    </div>
-                    <div class="col-md-6"><input class=" w-100 rounded-0" type="number" max="200" min="0"
-                            placeholder="Enter your age ">
-                    </div>
-                    <div class="col-md-6"><input class="w-100 rounded-0" type="password"
-                            placeholder="Enter your password ">
-                    </div>
-                    <div class="col-md-6"><input class=" w-100 rounded-0" type="password"
-                            placeholder="Renter your password ">
-                    </div>
-                </div>
-                <p id="error" class=" text-danger d-none text-center fs-5">Validation error</p>
-                <button id="submitBtn" class="btn bg-body">Submit</button>
+                    <p id="error" class=" text-danger d-none text-center fs-5">Validation error</p>
+                    <button id="submitBtn" class="btn bg-body">Submit</button>
+                </form>
             </section>
         </div>
-
     </main>
-
-
     <!-- main jquery -->
     <script src="js/jquery-3.7.1.min.js"></script>
     <!-- bootstrap -->

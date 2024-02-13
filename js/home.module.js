@@ -15,7 +15,7 @@ export class Home {
     });
     this.searchInput = document.getElementById("searchInput");
     this.searchInput.addEventListener("input", () => {
-      const currentName = this.searchInput.value;
+      const currentName = this.searchInput.value.trim();
       if (currentName == "") {
         this.getData("now_playing");
       } else {
