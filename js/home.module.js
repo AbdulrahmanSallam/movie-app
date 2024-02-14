@@ -40,7 +40,7 @@ export class Home {
       headers: {
         accept: "application/json",
         Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0NTU3ZmYyNjUzMDMxZGRjZTg1NjAxNzNlNmQzMjNhMyIsInN1YiI6IjY1YmQxZTFmZTE4Yjk3MDE2MjlhNTVkNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.jrrPvqPkbY4huH6IaAgY32nue3tKy0Qo2AWTwt0osKI",
+          "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxYmQ1YzE5NjQ1Y2EwMzkxNDNkMDllOTkxMTliZjUzMyIsInN1YiI6IjY1Y2JkZWU1MDA1MDhhMDE2MjQyMjRjMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.hpgT0lnxPK1X7az0ZMSLxqZh6aQf48H1fUzo__zQGiI",
       },
     };
     const response = await fetch(api, options);
