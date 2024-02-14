@@ -8,9 +8,10 @@ export class Ui {
     let container = "";
     for (let i = 0; i < data.length; i++) {
       let posterImg = `https://image.tmdb.org/t/p/original${data[i].poster_path}`;
-      if(data[i].poster_path== null){
+      if (data[i].poster_path == null) {
         posterImg = "images/default-movie.jpg";
       }
+
       container += `<div id="cardItem" class="cardItem col-md-6 col-lg-4">
         <div id="card" class="cardBox">
             <div class="image">
@@ -27,7 +28,9 @@ export class Ui {
                     <span> <i class="fa-solid text-warning fa-star"></i></span>
                 </div>
                 <div class="rate fs-5 d-flex  justify-content-center align-items-center"><span
-                        id="rate">${data[i].vote_average.toFixed(1)}</span></div>
+                        id="rate">${data[i].vote_average.toFixed(
+                          1
+                        )}</span></div>
             </div>
         </div>
     </div>`;
