@@ -5,10 +5,10 @@ import { Ui } from "./ui.module.js";
 
 export class Home {
   constructor() {
-    this.getData("now_playing");
     new Contact();
     this.aside = new Aside();
     this.uiClass = new Ui();
+    this.getData("now_playing");
     $("a[category]").on("click", (e) => {
       this.aside.open_closeAside();
       this.getData(e.target.getAttribute("category"));
@@ -22,10 +22,6 @@ export class Home {
         this.searchApi(currentName);
       }
     });
-  }
-
-  async search(movieName) {
-    await this.searchApi(movieName);
   }
 
   async getData(category) {
@@ -46,7 +42,7 @@ export class Home {
     const response = await fetch(api, options);
     const finalResponse = (await response.json()).results;
     loadingScreen.classList.add("d-none");
-    $("html").animate({ scrollTop: 0 }, 500);
+    $("html").animate({ scrollTop: 0 }, 1000);
     this.uiClass.displayData(finalResponse);
   }
 

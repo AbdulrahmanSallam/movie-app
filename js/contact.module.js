@@ -1,3 +1,4 @@
+"use strict";
 export class Contact {
   constructor() {
     this.inputs = $(".inputs input");
@@ -28,6 +29,7 @@ export class Contact {
     } else {
       this.inputs[0].classList.add("border-danger");
       return false;
+      ``;
     }
   }
 
